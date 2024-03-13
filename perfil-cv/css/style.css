@@ -1,0 +1,136 @@
+
+
+
+*{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100vw;
+   height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../sents/bg-image.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    font-family:'Be Vietnam Pro', sem serifa;;
+}
+.texto_topo{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px 20px 10px;
+    color: #fff;
+}
+.texto_topo h1{
+    width: 71%;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.texto_topo p{
+    width: 70%;
+    font-size: 1.4em;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 600;
+    line-height: 32px;
+}
+main{
+    display: flex;
+    width: 550px;
+    background: #ffffff24;
+    border-radius: 15px;
+    padding: 20px;
+    justify-content: center;
+    box-shadow: inset 0px 0px 10px 0px #ffffff9e;
+}
+form{
+    display: inline-block;
+    width: 100%;
+    font-size: 1em;
+}
+.container_nome-email, .container_objetivo-companhia{
+    display: inline-grid;
+    width: 272px;
+    height: 165px;
+    font-size: 17px;
+    justify-content: center;
+}
+input,.number_of_employees, .subject{
+    width: 200px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 0px;
+    margin: 0px 0px 20px;
+}
+.subject,.number_of_employees{
+    width: 221px;
+}
+legend{
+    padding: 0px 0px 0px 3px;
+    color: #fff;
+}
+.textarea_mensagem, button{
+    width: 498px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 27px;
+    align-items: center;
+}
+textarea::placeholder{
+    color: #000;
+    font-weight: 600;
+}
+textarea{
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 6px;
+}
+button{
+    width: 511px;
+    margin: 17px 0px 0px 0px;
+    padding: 18px;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #4036A9;
+    font-weight: 900;
+    letter-spacing: 2px;
+    border: 0px;
+}
+@media(max-width:425px){
+    .texto_topo{
+        width:100%;
+        margin:30px auto;
+        color: #fff;
+    }
+    .texto_topo h1{
+        font-size: 30px;
+    }
+    .texto_topo p{
+        font-size: 16px;
+    }
+    main{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 24px 0px 0px 0px;
+    }
+    .textarea_mensagem{
+        width:100%;
+        margin: 0px;
+    }
+    textarea{
+        width:95%;
+        margin: 10px 0px;
+    }
+    button{
+        width: 185px;
+        margin: 15px 0px 20px 0px;
+        border-radius: 20%;
+    }
+}
